@@ -12,8 +12,7 @@ const HomePage = () => {
             try{
                 const movies = await fetchTrendingMovies();
                 setTrendingMovies(movies);
-            }catch (error){
-                console.error(error);
+            }catch (error){ console.error(error);
             }
         })();
     }, []);
