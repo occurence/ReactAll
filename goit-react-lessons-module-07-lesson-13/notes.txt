@@ -1,0 +1,8 @@
+1. Redux Toolkit (https://redux-toolkit.js.org/)
+2. MockAPI
+3. operations
+4. createAsyncThunk
+
+
+
+
