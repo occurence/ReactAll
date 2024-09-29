@@ -1,0 +1,9 @@
+.cardWrapper, .movieListItem {
+  border: 1px solid black;
+  border-radius: 4px;
+  list-style: none;
+  padding: 10px;
+  > a {
+    text-decoration: none;
+  }
+}

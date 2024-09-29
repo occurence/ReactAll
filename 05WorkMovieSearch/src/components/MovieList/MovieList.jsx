@@ -1,5 +1,18 @@
-export const MovieList = () => {
+import { MovieListItem } from './MovieListItem/MovieListItem';
+import css from './MovieList.module.css';
+
+export const MovieList = ({ movies }) => {
     return(
-        <div>MovieList</div>
+        <ul className={css.container}>
+            {movies.map(({ id, title, poster_path, release_date }) => (
+                <MovieListItem
+                    key={id}
+                    id={id}
+                    title={title}
+                    poster={poster_path}
+                    release={release_date}
+                />
+            ))}
+        </ul>
     )
 }

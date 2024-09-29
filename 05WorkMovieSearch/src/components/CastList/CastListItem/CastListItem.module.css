@@ -1,0 +1,18 @@
+.cardWrapper {
+  border: 1px solid black;
+  border-radius: 4px;
+  list-style: none;
+
+  > a {
+    text-decoration: none;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 16px;
+}
+.castListItem{
+  /* width: 200px;
+  height: 300px; */
+}

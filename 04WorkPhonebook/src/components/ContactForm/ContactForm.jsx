@@ -16,7 +16,7 @@ export const ContactForm = ({ contacts, addContact }) => {
     const handleSubmit = e => {
         e.preventDefault();
         
-        if(name.toLowerCase() === '' || number.toLowerCase() === ''){
+        if (name.trim() === '' || number.trim() === '') {
             return;
         }
 

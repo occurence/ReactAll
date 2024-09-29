@@ -24,13 +24,17 @@ const MoviesPage = () => {
                 const movies = await fetchMovieByQuery(movieName);
                 setSearchResults(movies);
             }catch (error){ console.error(error);
-            }finally{       setIsLoading(false);
+            }finally{ setIsLoading(false);
             }
         })();
     }, [movieName]);
 
     return(
-        <div>Movies Page</div>
+        <div>
+            <SearchBar value={movieName} onChange={updateQueryString}/>
+            {/* {searchResults.length === 0 ? <Loader /> : <MovieList movies={searchResults}/>} */}
+            {isLoading ? <Loader /> : movieName && searchResults.length === 0 ? <h2>No results</h2> : <MovieList movies={searchResults}/>}
+        </div>
     )
 }
 

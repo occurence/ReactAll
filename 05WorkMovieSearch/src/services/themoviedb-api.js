@@ -22,11 +22,11 @@ export const fetchMovieDetails = async (movieId) => {
 }
 //REFERENCE: https://developer.themoviedb.org/reference/movie-credits
 export const fetchMovieCast = async (movieId) => {
-    const response = await axios.get(`movie/${movieId}/credits?`);
+    const response = await axios.get(`movie/${movieId}/credits`);
     return response.data.cast;
 }
 //REFERENCE: https://developer.themoviedb.org/reference/movie-reviews
-export const fetchMovieReveiws = async (movieId) => {
+export const fetchMovieReviews = async (movieId) => {
     const response = await axios.get(`movie/${movieId}/reviews`);
     return response.data.results;
 }

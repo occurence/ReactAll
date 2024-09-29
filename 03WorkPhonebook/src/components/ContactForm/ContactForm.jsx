@@ -33,7 +33,7 @@ export class ContactForm extends Component {
         const { contacts, addContact } = this.props;
         e.preventDefault();
         
-        if(name.toLowerCase() === '' || number.toLowerCase() === ''){
+        if (name.trim() === '' || number.trim() === '') {
             return;
         }
 

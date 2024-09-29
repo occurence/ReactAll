@@ -5,19 +5,14 @@ import { Loader } from '../Loader/Loader';
 import { Footer } from '../Footer/Footer';
 import css from './SharedLayout.module.css';
 
-// export const SharedLayout = () => {
-const SharedLayout = () => {
+export const SharedLayout = () => {
     return(
-        <>
-            <div className={css.container}>
-                <Header />
-                <Suspense fallback={<Loader />}>
-                    <Outlet />
-                </Suspense>
-                <Footer />
-            </div>
-        </>
-    )
+        <div className={css.container}>
+            <Header />
+            <Suspense fallback={<Loader />}>
+                <Outlet />
+            </Suspense>
+            <Footer />
+        </div>
+)
 }
-
-export default SharedLayout;
