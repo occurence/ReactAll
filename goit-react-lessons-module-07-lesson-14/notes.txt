@@ -1,8 +1,0 @@
-1. selectors
-2. naming conventions for selectors
-3. optimization
-4. createSelector
-
-
-
-
